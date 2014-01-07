@@ -3,7 +3,7 @@ package Catalyst::Plugin::Environment;
 use namespace::autoclean;
 use Moose::Role;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 after setup_finalize => sub {
@@ -17,6 +17,8 @@ after setup_finalize => sub {
 
 1
 __END__
+
+=pod
 
 =head1 NAME
 
@@ -35,7 +37,7 @@ Catalyst::Plugin::Environment - Catalyst plugin to modify C<%ENV> via your appli
 
 =head1 DESCRIPTION
 
-C<Catalyst::Plugin::Environment> allows you to specify environment variable
+Catalyst::Plugin::Environment allows you to specify environment variable
 values that should be set during application startup.  This is useful if
 you rely on modules that use environment variables but don't want these
 to be managed outside of your application.
@@ -46,7 +48,7 @@ jason hord E<lt>pravus@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2012, jason hord
+Copyright (c) 2012-2014, jason hord
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
